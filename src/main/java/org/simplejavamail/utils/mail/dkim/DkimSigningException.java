@@ -2,7 +2,7 @@ package org.simplejavamail.utils.mail.dkim;
 
 import java.io.IOException;
 
-import jakarta.mail.MessagingException;
+import javax.mail.MessagingException;
 
 /**
  * A {@link MessagingException} that is used to indicate DKIM specific

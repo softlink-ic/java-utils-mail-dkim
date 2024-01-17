@@ -5,6 +5,8 @@
 
 # org.simplejavamail:utils-mail-dkim
 
+## Forked from https://github.com/simple-java-mail/java-utils-mail-dkim to support JDK 1.8
+
 This is a simple to use library to use [DKIM](https://en.wikipedia.org/wiki/DKIM) features in conjunction with [Jakarta Mail](https://eclipse-ee4j.github.io/mail).
 
 Note: This is a revival / continuation of the archived project markenwerk/java-utils-mail-dkim, which itself was a continuation of an abandoned project on SourceForge.
