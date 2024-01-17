@@ -3,6 +3,7 @@ package org.simplejavamail.utils.mail.dkim;
 import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -20,7 +21,7 @@ import javax.naming.directory.InitialDirContext;
  */
 public final class DomainKeyUtil {
 
-   private static final Map<String, DomainKey> CACHE = new HashMap<String, DomainKey>();
+   private static final Map<String, DomainKey> CACHE = new ConcurrentHashMap<>();
 
    private static final Pattern RECORD_PATTERN = Pattern
          .compile("(?:\"(.*?)\"(?: |$))|(?:'(.*?)'(?: |$))|(?:(.*?)(?: |$))");
